@@ -1,0 +1,12 @@
+name: First Workflow
+
+on:
+   push:
+      branches:
+        - main
+jobs:
+   example_job:
+     runs-on: ubuntu-latest
+steps:
+  - name: print a welcome message
+    run: echo " welcome to our first github action workflow"
